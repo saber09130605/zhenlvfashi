@@ -1,0 +1,113 @@
+@fontSize_xiao:14px;
+@fontSize_zhong:16px;
+@fontSize_da:18px;
+@backColor:#fff;
+@Color_blue:#3b68b8;
+@borderColor:#ecf1f5 ;
+@navH:60px;
+@btn:30px;
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: @navH;
+    background: @backColor;
+    z-index: 11;
+}
+
+#userBtn {
+    height: @navH;
+    width: @navH;
+    background: url(../img/user-btn.png) no-repeat;
+    background-size: @btn @btn;
+    background-position: center;
+}
+#userBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    background: rgba(0,0,0,0.4);
+    .userB{
+        height: 100%;
+        width: 50%;
+        background: @backColor;
+    }
+}
+
+
+
+footer {
+    border-top: 1px solid @borderColor;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: @backColor;
+    width: 100%;
+    height: @navH;
+    ul {
+        display: flex;
+        height: 100%;
+        li {
+            flex: 1;
+            height: 100%;
+            text-align: center;
+            a {
+                padding-top: 8px;
+                margin-bottom: 8px;
+                display: block;
+                height: 100%;
+                color: @Color_blue;
+                font-size: @fontSize_xiao;
+                background: url(../img/footer.png) no-repeat;
+                line-height: 87px;
+                background-size: @btn 545px;
+            }
+        }
+        .foot-icon-1{
+            a {
+                background-position: center 9px; 
+            }
+        }
+        .foot-icon-1.active {
+            a {
+                background-position: center -54px;
+            }
+        }
+        .foot-icon-2{
+            a {
+                background-position: center -132px; 
+            }
+        }
+        .foot-icon-2.active {
+            a {
+                background-position: center -204px;
+            }
+        }
+        .foot-icon-3{
+            a {
+                background-position: center -276px; 
+            }
+        }
+        .foot-icon-3.active {
+            a {
+                background-position: center -341px;
+            }
+        }
+        .foot-icon-4{
+            a {
+                background-position: center -421px; 
+            }
+        }
+        .foot-icon-4.active {
+            a {
+                background-position: center -491px;
+            }
+        }
+    }
+}
